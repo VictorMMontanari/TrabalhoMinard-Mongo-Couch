@@ -1,0 +1,242 @@
+[
+    {
+        "id_estoque": "EST_0001",
+        "id_produto": "PROD_0001",
+        "quantidade": 98,
+        "loja": "Loja A",
+        "categoria": "Casa",
+        "ultima_atualizacao": "2024-10-30 09:58:27"
+    },
+    {
+        "id_estoque": "EST_0002",
+        "id_produto": "PROD_0002",
+        "quantidade": 25,
+        "loja": "Loja A",
+        "categoria": "Roupas",
+        "ultima_atualizacao": "2024-10-30 10:22:27"
+    },
+    {
+        "id_estoque": "EST_0003",
+        "id_produto": "PROD_0003",
+        "quantidade": 63,
+        "loja": "Loja B",
+        "categoria": "Eletrônicos",
+        "ultima_atualizacao": "2024-10-30 07:48:27"
+    },
+    {
+        "id_estoque": "EST_0004",
+        "id_produto": "PROD_0004",
+        "quantidade": 79,
+        "loja": "Loja A",
+        "categoria": "Livros",
+        "ultima_atualizacao": "2024-10-30 16:17:27"
+    },
+    {
+        "id_estoque": "EST_0005",
+        "id_produto": "PROD_0005",
+        "quantidade": 4,
+        "loja": "Loja C",
+        "categoria": "Livros",
+        "ultima_atualizacao": "2024-10-30 17:33:27"
+    },
+    {
+        "id_estoque": "EST_0006",
+        "id_produto": "PROD_0006",
+        "quantidade": 47,
+        "loja": "Loja C",
+        "categoria": "Livros",
+        "ultima_atualizacao": "2024-10-30 13:25:27"
+    },
+    {
+        "id_estoque": "EST_0007",
+        "id_produto": "PROD_0007",
+        "quantidade": 47,
+        "loja": "Loja B",
+        "categoria": "Livros",
+        "ultima_atualizacao": "2024-10-31 00:02:27"
+    },
+    {
+        "id_estoque": "EST_0008",
+        "id_produto": "PROD_0008",
+        "quantidade": 78,
+        "loja": "Loja B",
+        "categoria": "Eletrônicos",
+        "ultima_atualizacao": "2024-10-30 10:26:27"
+    },
+    {
+        "id_estoque": "EST_0009",
+        "id_produto": "PROD_0009",
+        "quantidade": 4,
+        "loja": "Loja C",
+        "categoria": "Jogos",
+        "ultima_atualizacao": "2024-10-30 10:19:27"
+    },
+    {
+        "id_estoque": "EST_0010",
+        "id_produto": "PROD_0010",
+        "quantidade": 70,
+        "loja": "Loja C",
+        "categoria": "Livros",
+        "ultima_atualizacao": "2024-10-30 03:25:27"
+    },
+    {
+        "id_estoque": "EST_0011",
+        "id_produto": "PROD_0011",
+        "quantidade": 73,
+        "loja": "Loja B",
+        "categoria": "Eletrônicos",
+        "ultima_atualizacao": "2024-10-30 22:29:27"
+    },
+    {
+        "id_estoque": "EST_0012",
+        "id_produto": "PROD_0012",
+        "quantidade": 96,
+        "loja": "Loja C",
+        "categoria": "Livros",
+        "ultima_atualizacao": "2024-10-30 04:23:27"
+    },
+    {
+        "id_estoque": "EST_0013",
+        "id_produto": "PROD_0013",
+        "quantidade": 29,
+        "loja": "Loja A",
+        "categoria": "Roupas",
+        "ultima_atualizacao": "2024-10-30 10:54:27"
+    },
+    {
+        "id_estoque": "EST_0014",
+        "id_produto": "PROD_0014",
+        "quantidade": 67,
+        "loja": "Loja C",
+        "categoria": "Jogos",
+        "ultima_atualizacao": "2024-10-30 11:28:27"
+    },
+    {
+        "id_estoque": "EST_0015",
+        "id_produto": "PROD_0015",
+        "quantidade": 14,
+        "loja": "Loja B",
+        "categoria": "Casa",
+        "ultima_atualizacao": "2024-10-30 22:29:27"
+    },
+    {
+        "id_estoque": "EST_0016",
+        "id_produto": "PROD_0016",
+        "quantidade": 72,
+        "loja": "Loja A",
+        "categoria": "Roupas",
+        "ultima_atualizacao": "2024-10-30 03:01:27"
+    },
+    {
+        "id_estoque": "EST_0017",
+        "id_produto": "PROD_0017",
+        "quantidade": 51,
+        "loja": "Loja B",
+        "categoria": "Jogos",
+        "ultima_atualizacao": "2024-10-30 15:22:27"
+    },
+    {
+        "id_estoque": "EST_0018",
+        "id_produto": "PROD_0018",
+        "quantidade": 29,
+        "loja": "Loja A",
+        "categoria": "Jogos",
+        "ultima_atualizacao": "2024-10-30 21:52:27"
+    },
+    {
+        "id_estoque": "EST_0019",
+        "id_produto": "PROD_0019",
+        "quantidade": 74,
+        "loja": "Loja B",
+        "categoria": "Livros",
+        "ultima_atualizacao": "2024-10-30 06:14:27"
+    },
+    {
+        "id_estoque": "EST_0020",
+        "id_produto": "PROD_0020",
+        "quantidade": 28,
+        "loja": "Loja C",
+        "categoria": "Casa",
+        "ultima_atualizacao": "2024-10-30 14:38:27"
+    },
+    {
+        "id_estoque": "EST_0021",
+        "id_produto": "PROD_0021",
+        "quantidade": 63,
+        "loja": "Loja A",
+        "categoria": "Eletrônicos",
+        "ultima_atualizacao": "2024-10-30 09:45:27"
+    },
+    {
+        "id_estoque": "EST_0022",
+        "id_produto": "PROD_0022",
+        "quantidade": 32,
+        "loja": "Loja B",
+        "categoria": "Casa",
+        "ultima_atualizacao": "2024-10-30 11:02:27"
+    },
+    {
+        "id_estoque": "EST_0023",
+        "id_produto": "PROD_0023",
+        "quantidade": 88,
+        "loja": "Loja C",
+        "categoria": "Jogos",
+        "ultima_atualizacao": "2024-10-30 16:18:27"
+    },
+    {
+        "id_estoque": "EST_0024",
+        "id_produto": "PROD_0024",
+        "quantidade": 19,
+        "loja": "Loja A",
+        "categoria": "Livros",
+        "ultima_atualizacao": "2024-10-30 08:56:27"
+    },
+    {
+        "id_estoque": "EST_0025",
+        "id_produto": "PROD_0025",
+        "quantidade": 45,
+        "loja": "Loja B",
+        "categoria": "Eletrônicos",
+        "ultima_atualizacao": "2024-10-30 07:34:27"
+    },
+    {
+        "id_estoque": "EST_0026",
+        "id_produto": "PROD_0026",
+        "quantidade": 27,
+        "loja": "Loja C",
+        "categoria": "Roupas",
+        "ultima_atualizacao": "2024-10-30 10:48:27"
+    },
+    {
+        "id_estoque": "EST_0027",
+        "id_produto": "PROD_0027",
+        "quantidade": 77,
+        "loja": "Loja A",
+        "categoria": "Casa",
+        "ultima_atualizacao": "2024-10-30 12:14:27"
+    },
+    {
+        "id_estoque": "EST_0028",
+        "id_produto": "PROD_0028",
+        "quantidade": 39,
+        "loja": "Loja B",
+        "categoria": "Livros",
+        "ultima_atualizacao": "2024-10-30 13:59:27"
+    },
+    {
+        "id_estoque": "EST_0029",
+        "id_produto": "PROD_0029",
+        "quantidade": 56,
+        "loja": "Loja C",
+        "categoria": "Jogos",
+        "ultima_atualizacao": "2024-10-30 17:25:27"
+    },
+    {
+        "id_estoque": "EST_0030",
+        "id_produto": "PROD_0030",
+        "quantidade": 20,
+        "loja": "Loja A",
+        "categoria": "Eletrônicos",
+        "ultima_atualizacao": "2024-10-30 19:47:27"
+    }
+]
