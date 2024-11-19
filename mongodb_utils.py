@@ -27,35 +27,55 @@ def get_collection():
     """Obtém a coleção de estoque."""
     return db[COLLECTION_NAME]
 
+def get_all_documents():
+    """Obtém todos os documentos da coleção MongoDB."""
+    collection = get_collection()
+    try:
+        return list(collection.find({}, {"_id": 0}))
+    except Exception as e:
+        print(f"Erro ao obter documentos: {e}")
+        return []
+
 def get_document(doc_id: str):
     """Obtém um documento pelo campo 'id_produto'."""
     collection = get_collection()
-    document = collection.find_one({"id_produto": doc_id}, {"_id": 0})
-    return document if document else {"message": "Documento não encontrado"}
+    try:
+        document = collection.find_one({"id_produto": doc_id}, {"_id": 0})
+        return document if document else {"message": "Documento não encontrado"}
+    except Exception as e:
+        print(f"Erro ao obter documento: {e}")
+        return {"message": "Erro ao obter documento"}
 
 def create_document(data: dict):
     """Cria um novo documento no MongoDB."""
     collection = get_collection()
     try:
         result = collection.insert_one(data)
-        return result.inserted_id
+        return {"inserted_id": str(result.inserted_id)}
     except Exception as e:
         print(f"Erro ao criar documento: {e}")
-        return None
+        return {"message": "Erro ao criar documento"}
 
 def update_document(doc_id: str, data: dict):
     """Atualiza um documento existente no MongoDB."""
     collection = get_collection()
-    result = collection.update_one({"id_produto": doc_id}, {"$set": data})
-    return result.modified_count > 0
-
+    try:
+        existing_document = collection.find_one({"id_produto": doc_id})
+        if not existing_document:
+            return {"message": "Documento não encontrado"}
+        
+        result = collection.update_one({"id_produto": doc_id}, {"$set": data})
+        return {"updated": result.modified_count > 0}
+    except Exception as e:
+        print(f"Erro ao atualizar documento: {e}")
+        return {"message": "Erro ao atualizar documento"}
 
 def delete_document(doc_id: str):
     """Remove um documento do MongoDB."""
     collection = get_collection()
     try:
-        result = collection.delete_one({"produto_id": doc_id})
-        return result.deleted_count > 0
+        result = collection.delete_one({"id_produto": doc_id})
+        return {"deleted": result.deleted_count > 0}
     except Exception as e:
         print(f"Erro ao deletar documento: {e}")
-        return False
+        return {"message": "Erro ao deletar documento"}

@@ -33,6 +33,15 @@ def couchdb_request(method: str, endpoint: str, data: dict = None):
         print(f"Erro na requisição: {e}")
         return None
 
+def get_all_documents():
+    """Obtém todos os documentos do CouchDB."""
+    response = couchdb_request("GET", "/_all_docs?include_docs=true")
+    if response and 'rows' in response:
+        return [row['doc'] for row in response['rows']]
+    else:
+        print("Nenhum documento encontrado ou erro ao obter documentos.")
+        return []
+
 # Função para obter um documento pelo ID
 def get_document(doc_id: str):
     """Obtém um documento específico pelo ID no CouchDB."""
@@ -89,7 +98,9 @@ def setup_database_and_document():
                 for document in documentos:
                     response = create_document(document)
                     if response:
-                        print(f"Documento criado: {response['id']}")
+                        print(f"Documento criado: {response.get('id', 'ID não encontrado')}")
+                    else:
+                        print("Erro ao criar o documento.")
             else:
                 print("Formato incorreto: esperado uma lista de documentos.")
     except FileNotFoundError:
