@@ -1,28 +1,24 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 from couchdb_utils import get_document as get_couch_doc, create_document as create_couch_doc, \
     update_document as update_couch_doc, delete_document as delete_couch_doc, get_all_documents as get_all_couch_docs
 from mongodb_utils import get_document as get_mongo_doc, create_document as create_mongo_doc, \
     update_document as update_mongo_doc, delete_document as delete_mongo_doc, get_all_documents as get_all_mongo_docs
 
-
 app = Flask(__name__)
-
+CORS(app)  # Habilita CORS para todas as origens
 
 @app.route("/products", methods=["GET"])
 def get_all_products():
-    """Obtém todos os documentos de acordo com o banco especificado (CouchDB ou MongoDB)."""
     db = request.args.get("db")
-    
     if db == "couchdb":
         data = get_all_couch_docs()
     else:
         data = get_all_mongo_docs()
-    
     return jsonify(data), 200 if data else 404
 
 @app.route("/product/<string:doc_id>", methods=["GET"])
 def get_product(doc_id):
-    """Obtém um produto de acordo com o banco especificado (CouchDB ou MongoDB)."""
     db = request.args.get("db")
     if db == "couchdb":
         data = get_couch_doc(doc_id)
@@ -56,6 +52,9 @@ def update_product(doc_id):
     # Verificar se os dados estão no formato correto
     if not data or not isinstance(data, dict):
         return jsonify({"error": "Dados inválidos"}), 400
+
+    # Remove o campo `_id` para evitar conflitos de atualização
+    data.pop("_id", None)
 
     try:
         if db == "couchdb":
